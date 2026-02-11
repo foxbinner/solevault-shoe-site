@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoleVault — Premium Footwear</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="has-promo">
+    <div class="page-container">
+      <!-- Promo Bar -->
+      <div class="promo-bar">
+        🔥 <span>MEGA SALE</span> — Up to 50% Off All Shoes! Use code
+        <span>SOLE50</span> at checkout
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar-custom" id="navbar">
+        <div class="navbar-inner">
+          <a href="index.html" class="brand">
+            <div class="brand-icon">👟</div>
+            SoleVault
+          </a>
+          <button
+            class="mobile-toggle"
+            onclick="
+              document.querySelector('.nav-links').classList.toggle('open')
+            "
+          >
+            ☰
+          </button>
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">🏠 Home</a></li>
+            <li><a href="#products-section">🛍️ Shop</a></li>
+            <li>
+              <a href="cart.html" class="cart-link"
+                >🛒 Cart <span class="cart-badge" id="cart-count">0</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main>
+        <!-- Hero Slider -->
+        <section class="hero-slider" id="hero-slider">
+          <!-- Slides injected by JS -->
+          <div class="slider-arrows">
+            <button class="slider-arrow" onclick="changeSlide(-1)">❮</button>
+            <button class="slider-arrow" onclick="changeSlide(1)">❯</button>
+          </div>
+          <div class="slider-controls" id="slider-controls">
+            <!-- Dots injected by JS -->
+          </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products-section">
+          <div class="section-header">
+            <h2>Trending Now</h2>
+            <p>Hand-picked styles loved by thousands</p>
+            <div class="underline"></div>
+          </div>
+          <div class="products-grid" id="product-list">
+            <!-- Products injected by JS -->
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-brand">Sole<span>Vault</span></div>
+          <ul class="footer-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+          <div class="footer-copy">
+            &copy; 2026 SoleVault. All rights reserved.
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast-notification" id="toast">
+      ✅ <span id="toast-msg">Added to cart!</span>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

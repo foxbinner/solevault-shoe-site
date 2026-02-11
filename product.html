@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product — SoleVault</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="has-promo">
+    <div class="page-container">
+      <!-- Promo Bar -->
+      <div class="promo-bar">
+        🔥 <span>MEGA SALE</span> — Up to 50% Off All Shoes! Use code
+        <span>SOLE50</span> at checkout
+      </div>
+
+      <!-- Navbar -->
+      <nav class="navbar-custom" id="navbar">
+        <div class="navbar-inner">
+          <a href="index.html" class="brand">
+            <div class="brand-icon">👟</div>
+            SoleVault
+          </a>
+          <button
+            class="mobile-toggle"
+            onclick="
+              document.querySelector('.nav-links').classList.toggle('open')
+            "
+          >
+            ☰
+          </button>
+          <ul class="nav-links">
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="index.html#products-section">🛍️ Shop</a></li>
+            <li>
+              <a href="cart.html" class="cart-link"
+                >🛒 Cart <span class="cart-badge" id="cart-count">0</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main>
+        <section class="product-detail">
+          <div class="detail-wrap">
+            <div class="detail-image">
+              <img id="product-image" src="" alt="Product" />
+            </div>
+            <div class="detail-info">
+              <span class="detail-tag">Premium Collection</span>
+              <h1 id="product-name"></h1>
+              <div class="detail-rating" id="product-rating">
+                ★★★★★ (128 reviews)
+              </div>
+              <p class="detail-desc" id="product-description"></p>
+              <div class="detail-price" id="product-price"></div>
+              <div class="detail-actions">
+                <button
+                  class="btn-shop btn-primary-custom"
+                  onclick="addToCart()"
+                >
+                  🛒 Add to Cart
+                </button>
+                <a href="index.html" class="btn-shop btn-outline-custom"
+                  >← Back to Shop</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-brand">Sole<span>Vault</span></div>
+          <ul class="footer-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+          <div class="footer-copy">
+            &copy; 2026 SoleVault. All rights reserved.
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast-notification" id="toast">
+      ✅ <span id="toast-msg">Added to cart!</span>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
