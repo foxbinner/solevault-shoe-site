@@ -4,9 +4,9 @@
   "installCommand": "",
   "outputDirectory": ".",
   "rewrites": [
-    { "source": "/", "destination": "/index.html" },
-    { "source": "/product", "destination": "/product.html" },
-    { "source": "/cart", "destination": "/cart.html" },
-    { "source": "/checkout", "destination": "/checkout.html" }
+    { "source": "/", "destination": "/legacy/index.html" },
+    { "source": "/product", "destination": "/legacy/product.html" },
+    { "source": "/cart", "destination": "/legacy/cart.html" },
+    { "source": "/checkout", "destination": "/legacy/checkout.html" }
   ]
 }

@@ -20,4 +20,20 @@ app.post("/create-payment-intent", async (req, res) => {
 
 app.use(express.static("."));
 
+app.get("/", (_, res) => {
+  res.sendFile(__dirname + "/legacy/index.html");
+});
+
+app.get("/product", (_, res) => {
+  res.sendFile(__dirname + "/legacy/product.html");
+});
+
+app.get("/cart", (_, res) => {
+  res.sendFile(__dirname + "/legacy/cart.html");
+});
+
+app.get("/checkout", (_, res) => {
+  res.sendFile(__dirname + "/legacy/checkout.html");
+});
+
 app.listen(3000, () => console.log("Server running on http://localhost:3000"));
