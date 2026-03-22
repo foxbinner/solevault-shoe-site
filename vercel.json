@@ -1,12 +1,3 @@
 {
-  "framework": null,
-  "buildCommand": "",
-  "installCommand": "",
-  "outputDirectory": ".",
-  "rewrites": [
-    { "source": "/", "destination": "/legacy/index.html" },
-    { "source": "/product", "destination": "/legacy/product.html" },
-    { "source": "/cart", "destination": "/legacy/cart.html" },
-    { "source": "/checkout", "destination": "/legacy/checkout.html" }
-  ]
+  "framework": "nextjs"
 }
